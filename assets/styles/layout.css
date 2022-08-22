@@ -1,0 +1,444 @@
+:root {
+    --bg-footer: hsl(192, 37%, 48%, .9);
+    --bg-body: hsl(0, 0%, 98%);
+    --bg-button-header: hsl(192, 37%, 48%);
+    --bg-button-header--hover: hsl(192, 90%, 77%);
+    --bg-button-footer: hsl(268, 34%, 53%);
+    --bg-button-footer--hover:  hsl(268, 100%, 86%);
+    --fc: hsl(240, 10%, 57%);
+    --clr-titles: hsl(240, 21%, 20%);
+    --clr-subtitle: hsl(192, 90%, 77%);
+    --fs: 1rem;
+    --fw-500: 500;
+    --fs-header: 2.16rem;
+    --fs-subheader: 2rem;
+}
+    
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set core body defaults */
+body {
+    background: center 2% no-repeat url(../logo.svg);
+    
+    text-align: center;
+    /* layout and typographie */
+    margin: 0 auto;
+    min-height: 100vh;
+
+    font-size: var(--fs);
+    font-weight: var(--fw-500);
+    line-height: 1.625em;
+    font-family: var(--ff);
+    background-color: var(--bg-body);
+    color: var(--fc);
+
+
+    position: relative;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+line-height: 1.1rem;
+    
+}
+
+button, header a {
+    color: var(--bg-body);            
+    height: 3.625rem;
+    border-radius: 1.75rem;
+    border-style: none;
+}
+
+button {
+    width: 12rem;
+}
+
+
+header a {
+     background-color: var(--bg-button-footer);
+    padding: 1.2rem 1.8125rem;
+        font-weight: 900;
+    font-size: var(--fs);
+     text-decoration: none;   
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header span {
+    opacity: .6;
+}
+
+footer span {
+    opacity: .6;
+}
+
+header a:hover {
+    background-color: var(--bg-button-footer--hover);
+}
+
+header button {
+    background-color: var(--bg-button-header)
+}
+
+footer button {
+    background-color: var(--bg-button-footer)
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: var(--bg-button-header--hover);
+}
+
+footer button:hover {
+    background-color: var(--bg-button-footer--hover);
+}
+
+.container {
+      padding-top: clamp(3rem, calc(3rem + ((1vw - 0.21875rem) * 3.252)), 4.5rem);
+}
+
+ul li{
+        list-style-type: none;
+}
+
+/* auto-resize img to fit a container */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header_background img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header_title  {
+      width: clamp(20.4375rem, calc(20.4375rem + ((1vw - 0.21875rem) * 17.6152)), 28.5625rem);
+      margin: 0 auto;
+}
+
+.header_background {
+    margin-top: 8.125rem;
+    width: 110%;
+    margin-left: -5%;
+}
+
+main {
+    padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
+    padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
+    padding-top: clamp(4rem, calc(4rem + ((1vw - 0.21875rem) * 4.2202)), 6.875rem);
+}
+
+
+
+
+
+main aside, footer aside {
+    border: 1px solid hsla(200, 10%, 50%,100);
+    border-radius: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.images li {
+    width: calc(50% - .75rem);
+}
+
+.images img {
+    display: block;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article h2 {
+    order: -1;
+}
+
+footer{
+    position: relative;
+    background-image: url(../mobile/image-footer.jpg);
+        background-position: top center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin-top: 11rem;
+        padding-top: 5.75rem;
+    padding-bottom: 4.5rem;
+     padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
+
+          padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
+}
+
+footer h1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    max-width: 15ch;
+    margin: 0 auto;
+}
+
+footer p {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+footer > *:not(.number) {
+    color:var(--bg-body);
+    position: relative; 
+}
+
+footer::before {
+    content:'';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;     
+    background-color: var(--bg-footer);
+    }
+
+.images {
+   margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.number {
+    position: relative;
+    top: -12.75rem;
+}
+
+hr{ 
+    border:  none;
+    border-left: 1px solid hsla(200, 10%, 50%,100);
+    height: 5.25rem;
+    width: 1px;    
+    margin: 0 auto;
+}
+
+footer aside {
+    background-color: var(--bg-body);
+}
+
+footer p {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+h1, button, h2 {
+    font-weight: 900;
+}
+
+.header_title h1, main h1 {
+    color: var(--clr-titles);
+}
+
+.header_title p {
+    font-size: 1.125rem;
+    padding-bottom: 2rem;
+    padding-top: clamp(24px, calc(1.5rem + ((1vw - 3.5px) * 0.9174)), 34px);
+}
+
+.header_title h1 {
+    font-size: var(--fs-header);
+    line-height: 2.75rem; 
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--clr-subtitle);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+main h1 {
+    padding-top: 1.5rem;
+        padding-bottom: 2rem;
+}
+
+@media (min-width:48em){
+    .header_background {
+        width: 110%;
+        margin-top: 8.75rem; 
+        margin-left: -5%;
+}
+    
+    .header_background img {
+    display: block;
+width: inherit;
+
+}
+    
+    .block {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.images li {
+    width: calc(25% - .5rem);
+}
+    
+    footer{
+        background-image: url(../tablet/image-footer.jpg);
+        margin-top: 12rem;
+        padding-bottom: 4.125rem;
+    }
+    
+    .images {
+   margin-top: 4.1875rem;
+    margin-bottom: 3rem;
+}
+    
+    .header_title h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+        max-width: 12ch;
+}
+    
+    main h1 {
+        padding-top: 1rem;
+        line-height: 2.25rem;
+        max-width: 20ch;
+        margin: 0 auto;
+    }
+    
+    footer p {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+    
+    main p {
+            padding-left: clamp(3.625rem, calc(3.625rem + ((1vw - 0.48rem) * 33.7798)), 17.8125rem);
+  padding-right: clamp(3.625rem, calc(3.625rem + ((1vw - 0.48rem) * 33.7798)), 17.8125rem);
+    }
+}
+
+@media (min-width:65em){
+    
+    .container {
+        padding-top: 0;
+    }
+    
+    .header_background {
+      margin-top: 10.5625rem;
+        width: 0%;
+      content: "";      
+}
+    
+    .images li {
+    width: calc(25% - 1.4rem);
+}
+    
+.number {
+    position: relative;
+    top: -14.25rem;
+}
+    
+    .header_desktop {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5%;
+        width: 104%;
+        margin-left: -2%;         /* drag the container on the left side by 4/2 % so that the  piece of the box outside of the container is equally reparti */
+    }
+
+    .header_title {
+        flex: 1 0 30%;
+    }
+    
+    .first_image {
+        content: url(../desktop/image-hero-left.png);
+        display: block;
+        width: 30%;
+    } 
+    
+    .second_image {
+        content: url(../desktop/image-hero-right.png);
+        width: 30%;     
+    } 
+    
+    footer{
+        background-image: url(../desktop/image-footer.jpg);
+        margin-top: 11.5rem;
+        padding-top: 7.25rem;
+        padding-bottom: 7.125rem;      
+    }
+    
+    footer h1 {
+        font-size: 2.5rem;
+    line-height: 2.75rem;
+        margin: 0;
+        
+    }
+
+    
+    .footer_text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+       gap: 6.15rem;
+    }
+    
+        footer p {
+        padding: 0;
+        margin: 0;
+            flex: 0 1 30%;
+    }
+    
+    footer button {
+        flex: 0 0 auto;
+    }
+    
+        .images {
+   margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+    
+.header_title h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+
+}
+}

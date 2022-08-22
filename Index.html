@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/typography.css">
   
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-    <header>
+    <header class="header_background"><img src="assets/tablet/image-hero.png" alt="image-hero"></header>
+    <div class="container">
+        <div class="header_desktop">
+        <aside class="first_image"></aside>
+    <header class="header_title">
         <h1>Group Chat for Everyone</h1>
         <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
 
   <div class="block">
-      <button class="block_button">Download v1.3</button>
+      <button class="block_button">Download <span>v1.3</span></button>
       <a href="#" class="block_link">What is it?</a>
   </div>
     </header>
-
+        <aside class="second_image"></aside>
+</div>
   <main>
+            <hr>
       <aside>01</aside>
       <nav class="nav_block">
           <ul class="images">
@@ -37,17 +45,25 @@
               </li>
           </ul>
       </nav>
+      <div class="article">
   <h1>Smarter meetings, all in one place</h1>
       <h2>Built for modern use</h2>
 
   <p>Send messages, share files, show your screen, and record your meetings — all in one 
   workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+          </div>
 </main>
+        </div>
   <footer>
-      <aside>02</aside>
+      <div class="number">
+      <hr>
+      <aside>02</aside></div>
+      <div class="footer_text">
   <h1>Experience more together</h1>
   <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-  <button class="footer_button">Download v1.3</button>
+  <button class="footer_button">Download <span>v1.3</span></button>
+      </div>
       </footer>
+       
 </body>
 </html>
