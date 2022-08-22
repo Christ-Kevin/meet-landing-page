@@ -150,7 +150,7 @@ main {
     padding-top: clamp(4rem, calc(4rem + ((1vw - 0.21875rem) * 4.2202)), 6.875rem);
 }
 
-main aside, footer aside {
+main aside, .number div {
     border: 1px solid hsla(200, 10%, 50%,100);
     border-radius: 5rem;
     width: 3.5rem;
@@ -247,7 +247,7 @@ hr{
     margin: 0 auto;
 }
 
-footer aside {
+.number div {
     background-color: var(--bg-body);
 }
 
