@@ -194,8 +194,10 @@ footer{
     margin-top: 11rem;
         padding-top: 5.75rem;
     padding-bottom: 4.5rem;
+  
      padding-right: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
           padding-left: clamp(1.5rem, calc(1.5rem + ((1vw - 0.21875rem) * 12.9358)), 10.3125rem);
+    max-height: 19.25rem;
 }
 
 footer h1 {
@@ -233,6 +235,7 @@ footer::before {
 .number {
     position: relative;
     top: -12.75rem;
+    margin-bottom: -11rem;
 }
 
 hr{ 
@@ -344,6 +347,10 @@ width: inherit;
             padding-left: clamp(3.625rem, calc(3.625rem + ((1vw - 0.48rem) * 33.7798)), 17.8125rem);
   padding-right: clamp(3.625rem, calc(3.625rem + ((1vw - 0.48rem) * 33.7798)), 17.8125rem);
     }
+    
+    .number {
+        margin-bottom: -12rem;
+    }
 }
 
 @media (min-width:65em){
@@ -365,6 +372,7 @@ width: inherit;
 .number {
     position: relative;
     top: -14.25rem;
+    margin-bottom: -8rem;
 }
     
     .header_desktop {
@@ -396,23 +404,23 @@ width: inherit;
         background-image: url(../desktop/image-footer.jpg);
         margin-top: 11.5rem;
         padding-top: 7.25rem;
-        padding-bottom: 7.125rem;      
+        padding-bottom: 7.125rem;    
     }
     
     footer h1 {
         font-size: 2.5rem;
-    line-height: 2.75rem;
-        margin: 0;
-        
+        line-height: 2.75rem;
+        margin: 0;       
     }
 
     
-    .footer_text {
+    .footer_text {      
         display: flex;
         justify-content: space-between;
         align-items: center;
+        align-content: center;
         text-align: left;
-       gap: 6.15rem;
+       gap: 3.15rem;
     }
     
         footer p {
