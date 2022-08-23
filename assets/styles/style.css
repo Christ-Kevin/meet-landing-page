@@ -70,6 +70,7 @@ a {
     align-items: center;
     align-content: center;
     letter-spacing: 1px;
+    max-height: 52px;
 }
 
 .block_button, .footer_button {
@@ -89,7 +90,7 @@ a:hover:not(.block_button) {
     background-color: var(--bg-button-footer--hover);
 }
 
-span {
+span, hr {
     opacity: .6;
 }
 
@@ -145,14 +146,15 @@ main {
 }
 
 main aside, .number div {
-    border: 1px solid hsla(200, 10%, 50%,100);
-    border-radius: 5rem;
+    border: 1px solid hsla(200, 10%, 50%, 100);
+    border-radius: 3rem;
     width: 3.5rem;
     height: 3.5rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: var(--fw-900);
 }
 
 .images {
@@ -271,7 +273,7 @@ h1, h2 {
 }
 
 h2 {
-    color: var(--clr-subtitle);
+    color: var(--bg-button-header);
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     font-size: 1rem;
@@ -283,6 +285,11 @@ main h1 {
 }
 
 @media (min-width:48em){
+    
+    .block_button {
+        margin: 0;
+    }
+    
     .header_background {
         width: 110%;
         margin-top: 8.75rem; 
@@ -365,7 +372,7 @@ width: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 5%;
+        gap: 3%;
         width: 104%;
         margin-left: -2%;         /* drag the container on the left side by 4/2 % so that the  piece of the box outside of the container is equally reparti */
     }
