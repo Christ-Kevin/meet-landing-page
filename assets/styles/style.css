@@ -235,7 +235,7 @@ footer::before {
 .number {
     position: relative;
     top: -12.75rem;
-    margin-bottom: -11rem;
+    margin-bottom: -11rem;     /* get rid of empty space */
 }
 
 hr{ 
