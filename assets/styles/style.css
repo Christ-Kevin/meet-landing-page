@@ -10,6 +10,7 @@
     --clr-subtitle: hsl(192, 90%, 77%);
     --fs: 1rem;
     --fw-500: 500;
+    --fw-900: 900;
     --fs-header: 2.16rem;
     --fs-subheader: 2rem;
 }
@@ -32,7 +33,6 @@ body {
     background: center 2% no-repeat url(../logo.svg);
     
     text-align: center;
-    /* layout and typographie */
     margin: 0 auto;
     min-height: 100vh;
 
@@ -52,8 +52,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-line-height: 1.1rem;
-    
+    line-height: 1.1rem;    
 }
 
 button, .header_title a {
