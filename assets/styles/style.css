@@ -55,59 +55,54 @@ body {
     line-height: 1.1rem;    
 }
 
-button, .header_title a {
+a {
     color: var(--bg-body);            
-    height: 3.625rem;
-    border-radius: 1.75rem;
+    border-radius: 2em;
     border-style: none;
-}
-
-button {
-    width: 12rem;
-}
-
-
-.header_title a {
-     background-color: var(--bg-button-footer);
-    padding: 1.2rem 1.8125rem;
-        font-weight: 900;
+    padding: 1.2em 1.8125em;
+    font-weight: 900;
     font-size: var(--fs);
      text-decoration: none;   
     white-space: nowrap;
     text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    letter-spacing: 1px;
 }
 
-.header_title span {
-    opacity: .6;
+.block_button, .footer_button {
+    width: 12rem;     
+    margin: 0 auto;
 }
 
-footer span {
-    opacity: .6;
-}
-
-.header_title a:hover {
-    background-color: var(--bg-button-footer--hover);
-}
-
-.header_title button {
-    background-color: var(--bg-button-header)
-}
-
-footer button {
-    background-color: var(--bg-button-footer)
-}
-
-
-button:hover {
+a:hover {
     cursor: pointer;
 }
 
-.header_title button:hover {
-    background-color: var(--bg-button-header--hover);
+a:not(.block_button) {
+     background-color: var(--bg-button-footer);
 }
 
-footer button:hover {
+a:hover:not(.block_button) {
     background-color: var(--bg-button-footer--hover);
+}
+
+span {
+    opacity: .6;
+}
+
+.header_title .block_button {
+    background-color: var(--bg-button-header)
+}
+
+.header_title a:nth-of-type(1):hover {
+    background-color: var(--bg-button-footer--hover);
+}
+
+.block_button:hover {
+    background-color: var(--bg-button-header--hover);
 }
 
 .container {
@@ -255,7 +250,7 @@ footer p {
     padding-bottom: 2rem;
 }
 
-h1, button, h2 {
+h1, h2 {
     font-weight: 900;
 }
 
@@ -284,7 +279,7 @@ h2 {
 
 main h1 {
     padding-top: 1.5rem;
-        padding-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 @media (min-width:48em){
@@ -419,7 +414,7 @@ width: inherit;
             flex: 0 1 30%;
     }
     
-    footer button {
+    .footer_button {
         flex: 0 0 auto;
     }
     
